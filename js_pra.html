@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+ <head>
+  <title>多視点配信</title>
+ </head>
+ <body>
+   <h1>多視点配信</h1>
+   <script language="javascript" type="text/javascript">
+        function OnButtonClick(x) {
+            target = document.getElementById("output");
+	    if (x == 1) {
+            	target.innerHTML = "犬だよ";
+	    } else if (x == 2) {
+  	    	target.innerHTML = "猫だよ";
+	　　} else if (x == 3) {
+		target.innerHTML = "猿だよ";
+	　　}
+        }
+   </script>
+   <input type="button" value="Dog" onclick="OnButtonClick(1);"/>
+   <input type="button" value="Cat" onclick="OnButtonClick(2);"/>
+   <input type="button" value="Monkey" onclick="OnButtonClick(3);"/>
+<br/>
+   <div id="output"></div> 
+ </body>
+</html>
